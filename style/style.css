@@ -1,0 +1,202 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    /* Set your base font size here */
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+figure,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+body {
+    line-height: 1.6;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Root Variables */
+:root {
+    --primary-gradient: linear-gradient(to bottom right, rgba(18, 20, 23, 1) 0%, rgba(61, 66, 73, 1) 91%);
+    /* Example gradient colors */
+
+    --background-color-primary: #24272C;
+    /* Example background color */
+    --background-color-secondary: #232732;
+    /* Example background color */
+    --primary-color: #7733FF;
+    --primary-text-color: #fff;
+    /* Example primary color */
+    --secondary-color: #F7A21E;
+    /* Example secondary color */
+    --font-family: 'Poppins', sans-serif;
+    /* Example font family */
+    --font-size-base: 16px;
+    /* Example base font size */
+    --line-height-base: 1.6;
+    /* Example base line height */
+}
+
+/* Apply Root Variables */
+body {
+    font-family: var(--font-family);
+    /* font-size: var(--font-size-base); */
+    /* line-height: var(--line-height-base); */
+    background-color: var(--background-color-primary);
+
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Add more styles and use root variables as needed */
+
+.wrapper {
+    background-color: var(--background-color-secondary);
+    width: 1305px;
+    /* padding: 6rem 4rem; */
+    padding: 4rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid red; */
+    margin-top: 6rem;
+    border-radius: 1.5rem;
+
+    /* inset shadow */
+    box-shadow: rgba(0, 0, 0, 0.815) 3.2px 3.2px 30px 0px inset, rgba(255, 255, 255, 0.219) -3.2px -3.2px 30px 0px inset;
+
+
+}
+
+.container {
+    width: 1050px;
+    border: 1px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
+
+}
+
+nav {
+    border: 1px solid var(--secondary-color);
+    width: 100%;
+    height: 3.75rem;
+    font-size: 1.375rem;
+}
+
+nav>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--primary-text-color);
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.75rem;
+    width: 9.25rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    background-color: #7733FF;
+}
+
+/* User Profile area */
+
+.profile_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.user_image {
+    background-image: var(--primary-gradient);
+    height: 29.625rem;
+    width: 29.625rem;
+    margin-top: 9.2rem;
+    border-radius: 50%;
+}
+
+.user_info {
+    margin-top: 3.430rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    color: var(--primary-text-color);
+}
+
+.info_greet {
+    font-size: 38px;
+}
+
+.info_name {
+    font-weight: 600;
+    font-size: 62px;
+}
+
+.info_roles {
+    font-size: 38px;
+}
+
+.info_desc {
+    font-size: 21px;
+    max-width: 700px;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 300;
+}
+
+.user_cta {
+    margin-top: 2.8rem;
+    display: flex;
+    flex-direction: row;
+    gap: 4.75rem;
+    /* align-items: ; */
+}
+
+.user_cta>button {
+
+    background-color: var(--background-color-primary);
+    width: 10.625rem;
+    height: 3.9rem;
+    border-radius: 1.5rem;
+    font-size: 22px;
+    border: none;
+    color: var(--primary-text-color);
+}
+
+/* User Profile area end */
