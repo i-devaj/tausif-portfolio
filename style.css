@@ -356,14 +356,12 @@ nav>ul {
 }
 
 .slider {
-    margin-top: 5rem;
     width: 1024px;
     height: 600px;
     border: 1px solid #F7A21E;
-    margin-bottom: 4rem;
     display: flex;
     overflow: hidden;
-
+    
 }
 
 .slides {
@@ -375,3 +373,28 @@ nav>ul {
 .python {
     background-color: #7733FF;
 }
+
+/* ////// */
+#slider-container {
+    margin-top: 5rem;
+    /* margin-bottom: 4rem; */
+    width: 1024px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid red;
+}
+
+#slides-wrapper {
+    height: 600px;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slide {
+    width: 100%;
+    box-sizing: border-box;
+    flex: 0 0 100%;
+    text-align: center;
+    padding: 20px;
+    /* background-color: #eee; */
+  }

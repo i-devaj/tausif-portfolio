@@ -73,19 +73,21 @@
                     </div>
                     
                     <ul class="project_categories">
-                        <li class="category">Python</li>
-                        <li class="category">Machine Learning</li>
-                        <li class="category">NLP</li>
+                        <li class="category" onclick="slide(0)">Python</li>
+                        <li class="category" onclick="slide(1)">Machine Learning</li>
+                        <li class="category" onclick="slide(2)">NLP</li>
                     </ul>
                 </div>
                 
-                <div class="slider">
-                    <div class="slides python">
-                        <h1>Project data to be added</h1>
-                    </div>
-                    <div class="slides machine_learning"></div>
-                    <div class="slides npl"></div>
-                </div>
+              
+                    <div id="slider-container">
+                        <div id="slides-wrapper">
+                          <div class="slide">Slide 1</div>
+                          <div class="slide">Slide 2</div>
+                          <div class="slide">Slide 3</div>
+                        </div>
+                      </div>
+               
                 <!-- Projects section end -->
                 
                 <div class="skills">
@@ -96,20 +98,22 @@
                     </div>
                     
                     <ul class="skill_categories">
-                        <li class="category">Python</li>
+                        <li class="category">Skill</li>
                         
                     </ul>
                 </div>
-                <div class="slider skills_slider">
-                    <div class="slides python">
-                        <h1>Skills to be added</h1>
+                <div id="slider-container">
+                    <div id="slides-wrapper">
+                      <div class="slide">Slide 1</div>
+                      <div class="slide">Slide 2</div>
+                      <div class="slide">Slide 3</div>
                     </div>
-                    <div class="slides machine_learning"></div>
-                    <div class="slides npl"></div>
-                </div>
+                  </div>
+           
                 
             </div>
         </div>
+        <script src="./script.js"></script>
         </body>
         
         </html>
