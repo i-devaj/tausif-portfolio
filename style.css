@@ -162,7 +162,6 @@ nav>ul {
 /* /////////////////////////// */
 
 
-
 .profile_container {
     display: flex;
     flex-direction: column;
@@ -199,8 +198,55 @@ nav>ul {
 }
 
 .info_roles {
-    font-size: 38px;
+    font-size: 36px;
+    font-weight: 500;
 }
+/* Typing Animation */
+.info_roles span{
+    position: relative;
+}
+
+.info_roles span::before{
+    content: "Learning Engineer";
+    animation: words 20s infinite;
+}
+
+.info_roles span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #232732;
+    border-left: 2px solid #ff7f50;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor{
+    to{
+        border-left: 2px solid #ff7f50;
+    }
+}
+
+@keyframes words {
+    0%, 50%{
+        content: "Learning Engineer";
+    }
+    51%, 100%{
+        content: "Learning Engineer";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+
+/*------------------------------------*/
 
 .info_desc {
     font-size: 21px;
@@ -279,7 +325,8 @@ nav>ul {
 
 
 .projects,
-.skills {
+.skills,
+.certificate {
     max-width: 1024px;
     /* width: 1024px; */
     width: 100%;
@@ -292,7 +339,8 @@ nav>ul {
 }
 
 .projects_title,
-.skill_title {
+.skill_title,
+.certificate_title {
     font-size: 34px;
 
 }
